@@ -7,7 +7,7 @@ var tableData = data;
 // Get a reference to the table body
 var tbody = d3.select("tbody");
 
-tableData.forEach((data) => {
+tableData.forEach(data => {
 
     // Append a row for each object in tableData
     var row = tbody.append("tr");
@@ -43,10 +43,10 @@ button.on("click", () => {
     // console.log(inputValue);
 
     // Filter table data by the input value (in this case the datetime)
-    var filterData = tableData.filter((sighting) => sighting.datetime === inputValue);
+    var filterData = tableData.filter(sighting => sighting.datetime === inputValue);
 
     // Create the filtered table
-    filterData.forEach((data) => {
+    filterData.forEach(data => {
 
         // Append a row for each object in tableData
         var row = tbody.append('tr');
