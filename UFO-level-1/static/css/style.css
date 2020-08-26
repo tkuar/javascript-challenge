@@ -68,7 +68,7 @@ h1 {
   background-color: #5517ff ;
 }
 .form{
-  background-color: #00FF7F !important;
+  background-color: #00FF7F;
 }
 
 .filters {
@@ -109,7 +109,7 @@ select {
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/ufo.gif");
+  background-image: url("../images/ufo1.gif");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
