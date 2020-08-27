@@ -45,23 +45,11 @@ button.on("click", () => {
     // Filter table data by the input value (in this case the datetime)
     var filterData;
 
-    // Check if inputs are not null before filtering data
-    if (date !== "" ){
-        filterData = tableData.filter(sighting => sighting.datetime === date);
+    // Combines all the filters
+    if ((date !== "") || (city !== "") || (state !== "") || (state !== "") || (country !== "") || (shape !== "")){
+        filterData = tableData.filter(sighting => sighting.datetime === date || sighting.city === city || sighting.state === state || sighting.country === country || sighting.shape === shape);
     }
-    if (city !== "" ){
-        filterData = tableData.filter(sighting => sighting.city === city);
-    }
-    if (state !== "" ){
-        filterData = tableData.filter(sighting => sighting.state === state);
-    }
-    if (country !== "" ){
-        filterData = tableData.filter(sighting => sighting.country === country);
-    }
-    if (shape !== "" ){
-        filterData = tableData.filter(sighting => sighting.shape === shape);
-    }
-    
+
     // Create the filtered table
     filterData.forEach(data => {
 
