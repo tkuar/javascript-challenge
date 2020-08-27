@@ -2,7 +2,7 @@
   box-sizing: border-box;
   font-family: monospace;
   font-weight: bold;
-  font-size: large;
+  
 }
 
 html,
@@ -67,6 +67,7 @@ h1 {
   padding: 0;
   background-color: #5517ff ;
 }
+
 .form{
   background-color: #00FF7F;
 }
@@ -132,22 +133,26 @@ select {
 .form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #c0c0c0;
+  font-size: small;
 
 }
 
 .form-control::-moz-placeholder {
   /* Firefox 19+ */
   color: #c0c0c0;
+  font-size: small;
 }
 
 .form-control:-ms-input-placeholder {
   /* IE 10+ */
   color: #c0c0c0;
+  font-size: small;
 }
 
 .form-control:-moz-placeholder {
   /* Firefox 18- */
   color: #c0c0c0;
+  font-size: small;
 }
 
 /* media queries which will only be activated at specific screen sizes */
@@ -160,7 +165,6 @@ select {
 @media (max-width: 500px) {
   * {
     font-weight: normal;
-  font-size: medium;
   }
   #table-area thead {
     display: none;
