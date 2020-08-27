@@ -34,17 +34,34 @@ button.on("click", () => {
     // Clear the existing table
     tbody.html("");
 
-    // Select the input element and get the raw HTML node
-    var inputElement = d3.select("#datetime");
-
-    // Get the value property of the input element
-    var inputValue = inputElement.property("value");
-
+    // Select and get the value property of the input elements
+    var date = d3.select("#datetime").property("value");
+    var city = d3.select("#city").property("value").trim().toLowerCase();
+    var state = d3.select("#state").property("value").trim().toLowerCase();
+    var country = d3.select("#country").property("value").trim().toLowerCase();
+    var shape = d3.select("#shape").property("value").trim().toLowerCase();
     // console.log(inputValue);
 
     // Filter table data by the input value (in this case the datetime)
-    var filterData = tableData.filter(sighting => sighting.datetime === inputValue);
+    var filterData;
 
+    // Check if inputs are not null before filtering data
+    if (date !== "" ){
+        filterData = tableData.filter(sighting => sighting.datetime === date);
+    }
+    if (city !== "" ){
+        filterData = tableData.filter(sighting => sighting.city === city);
+    }
+    if (state !== "" ){
+        filterData = tableData.filter(sighting => sighting.state === state);
+    }
+    if (country !== "" ){
+        filterData = tableData.filter(sighting => sighting.country === country);
+    }
+    if (shape !== "" ){
+        filterData = tableData.filter(sighting => sighting.shape === shape);
+    }
+    
     // Create the filtered table
     filterData.forEach(data => {
 
