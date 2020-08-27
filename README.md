@@ -12,6 +12,11 @@ JavaScript and DOM Manipulation
 * Use a date form in your HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
 
 ### How to Run:
+* Navigate to UFO-level-1/index.html
+* Launch index.html in your browser
+#### How to Filter:
+![fig1](UFO-level-1/static/images/table_filter_1.png)
+![fig1](UFO-level-1/static/images/table_filter_2.png)
 
 
 ## Level 2: Multiple Search Categories
