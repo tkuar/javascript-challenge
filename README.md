@@ -14,9 +14,12 @@ JavaScript and DOM Manipulation
 ### How to Run:
 * Navigate to UFO-level-1/index.html
 * Launch index.html in your browser
-#### How to Filter:
+### How to Filter:
+#### By Date
+##### Note: The dates only range from _1/1/2010 - 1/13/2010_
+* Dates < 10 can only be entered as a single digit i.e., 1 **NOT** 01
 ![fig1](UFO-level-1/static/images/table_filter_1.png)
-![fig1](UFO-level-1/static/images/table_filter_2.png)
+![fig2](UFO-level-1/static/images/table_filter_2.png)
 
 
 ## Level 2: Multiple Search Categories
@@ -32,3 +35,23 @@ JavaScript and DOM Manipulation
   5. `shape`
 
 ### How to Run:
+* Navigate to UFO-level-2/index.html
+* Launch index.html in your browser
+### How to Filter:
+When you filter the data, all the conditions are taken into account
+#### By Date
+##### Note: The dates only range from _1/1/2010 - 1/13/2010_ and, dates < 10 can only be entered as a single digit i.e., 1 **NOT** 01.
+![fig1](UFO-level-2/static/images/table_filter_1.png)
+#### By City
+##### Note: Case does not matter.
+![fig2](UFO-level-2/static/images/table_filter_2.png)
+#### By State
+##### Note: You must enter the state's abbreviation, and case does not matter.
+![fig3](UFO-level-2/static/images/table_filter_3.png)
+#### By Shape
+##### Note: Enter whatever shape you are looking for, and case does not matter.
+![fig4](UFO-level-2/static/images/table_filter_4.png)
+#### By Country
+##### Note: The only country in this dataset is the US and you must enter it as this abbreviation, but case does not matter.
+![fig5](UFO-level-2/static/images/table_filter_5.png)
+![fig6](UFO-level-2/static/images/table_filter_6.png)
