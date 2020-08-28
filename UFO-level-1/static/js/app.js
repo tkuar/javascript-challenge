@@ -42,6 +42,9 @@ button.on("click", () => {
 
     // console.log(inputValue);
 
+     // clear the input value
+     d3.select("#datetime").node().value = "";
+
     // Filter table data by the input value (in this case the datetime)
     var filterData = tableData.filter(sighting => sighting.datetime === inputValue);
 

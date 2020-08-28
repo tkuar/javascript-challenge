@@ -42,6 +42,13 @@ button.on("click", () => {
     var shape = d3.select("#shape").property("value").trim().toLowerCase();
     // console.log(inputValue);
 
+    // clear the input value
+    d3.select("#datetime").node().value = "";
+    d3.select("#city").node().value = "";
+    d3.select("#state").node().value = "";
+    d3.select("#country").node().value = "";
+    d3.select("#shape").node().value = "";
+   
     // Filter table data by the input value (in this case the datetime)
     var filterData;
 
